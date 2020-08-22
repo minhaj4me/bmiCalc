@@ -62,14 +62,14 @@
     <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> 
    </div> 
   </section> 
-   <section class="white-section audio">
+
    
-        <div class="container-fluid">  
+        <div class="container-fluid audio">  
           <audio autoplay>
   <source src="audio.mp3" type="audio/ogg">
 <p>BlackLivesMatter</p>
 </div>
- </section>
+
   <!-- Footer --> 
   <footer class="white-section" id="footer"> 
    <div class="container-fluid">  
@@ -101,7 +101,7 @@
   document.getElementById("feedback").innerHTML = " , You are Overweight";
   
   }
- else if(newBmi == 30.0 || newBmi>30.0){
+ else (newBmi>=30.00){
    alert("You are Obese");
    document.getElementById("feedback").innerHTML = " , You are Obese";
   
