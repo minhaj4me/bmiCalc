@@ -62,8 +62,11 @@
     <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> 
    </div> 
   </section> 
+   <section class="white-section">
+     
+     </section>
   <!-- Footer --> 
-  <footer class="colored-section" id="footer"> 
+  <footer class="white-section" id="footer"> 
    <div class="container-fluid">  
     <i class="social-icon fas fa-envelope"></i> 
     <p>All Right Reserved 2020</p> 
@@ -73,7 +76,7 @@
  function bmiCalc() {
      weight = document.getElementById("weight").value;
      height = document.getElementById("height").value;
-     bmi = document.getElementById("result").innerHTML = weight/(height*height); 
+     bmi = weight/(height*height); 
   newBmi = bmi.toFixed(1);
   document.getElementById("result").innerHTML = newBmi;
   alert("Your BMI is "+ newBmi); 
@@ -83,7 +86,7 @@
    document.getElementById("feedback").innerHTML = " , You are Underweight";
      
   }
-  else if (newBmi>18.4 && newBmi<24.9){
+  else if (newBmi>18.5 && newBmi<24.9){
   alert("You are Normal");
   document.getElementById("feedback").innerHTML = " , You are Normal";
   
